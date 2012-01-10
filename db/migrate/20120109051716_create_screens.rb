@@ -1,6 +1,7 @@
 class CreateScreens < ActiveRecord::Migration
   def self.up
     create_table :screens do |t|
+      t.integer :micropost_id
       t.string :title
       t.text :description
       t.string :file
